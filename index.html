@@ -3,118 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>tabla</title>
+    <title>Formulario</title>
     <link rel="stylesheet" href="diseño.css">
 </head>
 <body>
-    <h1>Desempleo en España</h1>
-    <p>La siguiente tabla mustra la evolucion del desempleo en España, comparado con la media de los 27 paises de la union europea, Grecia, que compite con España en ser el primero en esta vergonzosa competicion y Estados Unidos y Japon, dos de las primeras economias mundiales.</p>
-    <table>
-        <tr>
-        <th>Pais</th>
-        <th>2000</th>
-        <th>2001</th>
-        <th>2002</th>
-        <th>2003</th>
-        <th>2004</th>
-        <th>2005</th>
-        <th>2006</th>
-        <th>2007</th>
-        <th>2008</th>
-        <th>2009</th>
-        <th>2010</th>
-        <th>2011</th>
-        <th>2012</th>
-        <th>2013</th>
-        </tr>
-       
-                <tr>
-                    <td>UE (27 paises)</td>
-                    <td>8.9</td>
-                    <td>8.7</td>
-                    <td>9</td>
-                    <td>9.1</td>
-                    <td>9.3</td>
-                    <td>9</td>
-                    <td>8.2</td>
-                    <td>7.2</td>
-                    <td>7</td>
-                    <td>9.</td>
-                    <td>9.6</td>
-                    <td>9.6</td>
-                    <td>10.4</td>
-                    <td>10.8</td>
-                </tr>
-                <tr>
-                    <td>España</td>
-                    <td>11.9</td>
-                    <td>10.6</td>
-                    <td>11.5</td>
-                    <td>11.5</td>
-                    <td>11</td>
-                    <td>9.2</td>
-                    <td>8.5</td>
-                    <td>8.2</td>
-                    <td>11.3</td>
-                    <td>17.9</td>
-                    <td>19.9</td>
-                    <td>21.4</td>
-                    <td>24.8</td>
-                    <td>26.1</td>
-                </tr>
-                <tr>
-                    <td>Grecia</td>
-                    <td>11.2</td>
-                    <td>10.7</td>
-                    <td>10.3</td>
-                    <td>9.7</td>
-                    <td>10.6</td>
-                    <td>10</td>
-                    <td>9</td>
-                    <td>8.4</td>
-                    <td>7.8</td>
-                    <td>9.6</td>
-                    <td>12.7</td>
-                    <td>17.9</td>
-                    <td>24.5</td>
-                    <td>27.5</td>
-                </tr>
-                <tr>
-                    <td>Estados Unidos</td>
-                    <td>4</td>
-                    <td>4.8</td>
-                    <td>5.8</td>
-                    <td>6</td>
-                    <td>5.5</td>
-                    <td>5.1</td>
-                    <td>4.6</td>
-                    <td>4.6</td>
-                    <td>5.8</td>
-                    <td>9.3</td>
-                    <td>9.6</td>
-                    <td>8.9</td>
-                    <td>8.1.4</td>
-                    <td>7.4</td>
-                </tr>
-                <tr>
-                    <td>Japon</td>
-                    <td>4.7</td>
-                    <td>5</td>
-                    <td>5.4</td>
-                    <td>5.3</td>
-                    <td>4.7</td>
-                    <td>4.4</td>
-                    <td>4.1</td>
-                    <td>3.9</td>
-                    <td>4</td>
-                    <td>5.1</td>
-                    <td>5.1</td>
-                    <td>4.6</td>
-                    <td>4.3</td>
-                    <td>4</td>
-                </tr>
+    <h1>Formulario de registro</h1>
+    <div id="formulario">
+        <form id="form" action=" " method="get">
+            <br>
+            <div class="opcion">
+                <label for="nombre">Nombre </label>
+                <input type="text"name="nombre" id="nombre" maxlength="50">
+            </div>
+        </br>
+        <br>
+            <div class="opcion">
+                <label for="apellido">Apellidos </label>
+                <input type="text"name="apellido" id="apellido" maxlength="50">
+            </div>
+        </br>
+        <br>
+            <div class="opcion">
+                <label for="sexo">Sexo: </label><label for="sexo">hombre</label><input type="checkbox"name="sexo" id="sexo"><label for="sexo">mujer</label><input type="checkbox"name="sexo" id="sexo">
+            </div>
+        </br>
+        <br>
+            <div class="opcion">
+                <label for="correo">Correo </label>
+                <input type="texto"name="correo" id="correo">
+            </div>
+        </br>
+        <br>
+        <div class="opcion">
+            <label for="poblacion">Poblacion</label>
+            <select id="poblacion" name="poblacion">
+                <option value="alicante">Alicante</option>
+                <option value="sevilla">Sevilla</option>
+                <option value="madrid">Madrid</option>
+                <option value="valencia">Valencia</option>
+            </select>
+        </div>
+    </br>
+    <br>
+    <div class="opcion">
+        <label for="descripcion">Descripcion </label>
+        <textarea></textarea>
+    </div>
+</br>
+<br>
+<div class="opcion">
+    <input type="checkbox"name="deseo" id="deseo" checked><label for="deseo">Deseo recibir informacion sobre novedades y ofertas</label>
+</div>
+</br>
+<br>
+<div class="opcion">
+    <input type="checkbox"name="acepto" id="acepto"><label for="acepto">Declaro haber leido y aceptar las condiciones generales del programa y la normativa sobre proteccion de datos</label>
+</div>
+</br>
+<br>
+            <div class="boton">
+                <input type="submit"name="enviar" id="bntEnviar">
+            </div>
+        </br>
 
+        </form>
+        
 
-    </table>
+    </div>
 </body>
 </html>
